@@ -1,0 +1,539 @@
+\documentclass[notheorems,envcountsect,allowframebreaks,xcolor=svgnames,8pt]{beamer}
+
+\def\PM{{\mathrm{PM_{2.5}}}} 
+\definecolor{uniblue}{rgb}{.125,.25,.5}
+\def\cub{\color{uniblue}}
+\usepackage{amsmath,amssymb}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{bookmark}
+\usepackage{amsmath}
+\usepackage{bbold}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{multimedia}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+%%%special symbols%%%
+
+\newcommand{\IS}{\mathbb{S}}
+\newcommand{\U}{{\bf U}}
+\newcommand{\V}{{\bf V}}
+\newcommand{\W}{{\bf W}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\CC}{\mathbb{C}}
+\newcommand{\FF}{\mathbb{F}}
+\newcommand{\SSS}{\mathfrak{S}}
+\newcommand{\dd}{\mathfrak{d}}
+\newcommand{\LL}{\mathcal{L}}
+\newcommand{\Lie}{\text{Lie}}
+\newcommand{\GG}{\mathcal{G}}
+\newcommand{\AAA}{\mathcal{A}}
+\newcommand{\PPP}{\mathcal{P}}
+\newcommand{\res}{\text{res}}
+\newcommand{\Mat}{\text{Mat}}
+\newcommand{\mm}{\mathfrak{m}}
+\newcommand{\RRR}{\mathcal{R}}
+\newcommand{\OOO}{\mathcal{O}}
+\newcommand{\Conj}{\mbox{Conj}}
+\newcommand{\Syl}{\mbox{Syl}}
+\newcommand{\Mod}{\mbox{ mod }}
+\newcommand{\Aut}{\mbox{Aut}}
+\newcommand{\Char}{\mbox{ char }}
+\newcommand{\ZZZ}{\mathcal{Z}}
+\newcommand{\oo}{$\ddot{\mbox{o}}$}
+\newcommand{\Tor}{\mbox{Tor}}
+\newcommand{\Hom}{\mbox{Hom}}
+\newcommand{\stt}{^{\mbox{\tiny{st}}}}
+\newcommand{\ndd}{^{\mbox{\tiny{nd}}}}
+\newcommand{\rdd}{^{\mbox{\tiny{rd}}}}
+\newcommand{\thh}{^{\mbox{\tiny{th}}}}
+\newcommand{\Gal}{\mbox{Gal}}
+\newcommand{\ii}{\mathfrak{i}}
+\newcommand{\bbox}{\hfill $\blacksquare$}
+\newcommand{\ep}{\\ \vspace{.001cm}}
+\newcommand{\xx}{\mathbf{x}}
+\newcommand{\cnn}{\mathbb{C}^{n \times n}}
+\newcommand{\diag}{\mbox{Diag}}
+\newcommand{\agl}{AGL(2,\ZZ)}
+\newcommand{\gl}{GL(2,\ZZ)}
+\newcommand{\ord}{\operatorname{ord}}
+\newcommand{\lcm}{\operatorname{lcm}}
+
+
+\definecolor{cornellred}{rgb}{0.75, 0.01, 0.1}
+
+\mode<presentation> {
+  \useoutertheme[footline=authorinstitutetitle]{miniframes}
+  \usetheme{Darmstadt}
+  \usecolortheme[named=cornellred]{structure}
+  \setbeamercovered{transparent}
+\setbeamertemplate{footline}[frame number]  
+\setbeamertemplate{navigation symbols}{}
+  \setbeamertemplate{theorem}[ams style]
+  \setbeamertemplate{theorems}[numbered]
+  \setbeamercolor{frametitle}{fg=structure}
+  \setbeamertemplate{frametitle}{
+    \raggedleft
+    {\bf \insertframetitle}
+    \par
+  }
+}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{example}{Example}
+\newtheorem{examples}{Examples}
+\newtheorem{remark}{Remark}
+\newtheorem{question}{Question}
+
+\title[Fusing AOD and PM$_{2.5}$ datasets]
+{Fusing surface and satellite-derived PM observations to \\ determine the impact of international transport on coastal PM$_{2.5}$ concentrations in the western U.S.}
+
+\author
+{Neha Bora \and Tuo Chen \and Dana Cochran \and Kelly Dougan \and Gautam Sabnis \and Chuanping Yu}
+
+\institute[SAMSI]
+{Industrial Math/Stat Modeling Workshop \\ Environmental Protection Agency}
+
+\subject{Talks}
+
+%\AtBeginSubsection[] {
+%  \begin{frame}<beamer>{Outline}
+%  \tableofcontents[currentsection,currentsubsection]
+%  \end{frame}
+%}
+\AtBeginSection[]
+{
+ \begin{frame}<beamer>
+ \frametitle{Outline}
+ \tableofcontents[currentsection]
+ \end{frame}
+}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+%\begin{frame}{Outline}
+%\tableofcontents
+%% You might wish to add the option [pausesections]
+%\end{frame}
+%------------------------------------------Introduction--------------------------------------------------------
+\section{Introduction}
+\iffalse
+\begin{frame}{What we plan to talk about}
+\begin{itemize}
+\item Background
+
+\begin{itemize}
+\item What are PM$_{2.5}$ and AOD?
+\end{itemize}
+
+\item The Problem
+\begin{itemize}
+\item Can we use PM measurements to predict past and/or future PM measurements?
+\item Can we construct a model to predict PM from AOD measurements?
+\item Is there an impact of PM from international sources?
+\end{itemize}
+
+\item Data Sources
+\begin{itemize}
+\item PM sites and data
+\item AOD data
+\item Other covariates
+\end{itemize}
+
+\item Methods
+
+\item Models
+
+\item Experiments
+
+\item Conclusion
+
+
+\end{itemize}
+
+\end{frame}
+\fi
+%--------------------------------------------------------------------------------------------------------------
+\subsection*{Background}
+
+
+
+\begin{frame}{Health Impacts}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{19481029pm.png}
+\caption{Donora, PA at noon on October 29, 1948}
+\label{fig:locations}
+\end{figure}
+
+\begin{itemize}
+\item 20 people died, thousands were sickened by smog from a steel mill.
+\item PM$_{2.5}$ one of the most harmful pollutants, can get lodged in lungs and cause respiratory problems
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{PM and AOD}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{hair.png}
+\caption{Size of PM$_{2.5}$ compared to other particulate matter}
+\label{fig:locations}
+\end{figure}
+
+\begin{itemize}
+\item PM$_{2.5}$ is a particulate matter that is less than $2.5$ micrometers in diameter.
+\item Aerosol Optical Depth (AOD) measures the amount of light from the sun blocked by dust and pollutants.
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Pollution in Western U.S.}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.45]{smog.png}
+\end{figure}
+\begin{itemize}
+\item The Clean Air Act imposes a national standard of permissible amount of PM$_{2.5}$. 
+\item Sites in California, such as in the Los Angeles area consistently violate this standard.
+\item Want to investigate the possibility of external impact by international air travel of PM$_{2.5}$.
+\end{itemize}
+\end{frame}
+
+
+
+%--------------------------------------------------------------------------------------------------------------
+
+%\include{background}
+
+%------------------------------------------Data Sources--------------------------------------------------------
+
+\section{Data Sources and methods}
+\begin{frame}{PM$_{2.5}$ }
+\begin{figure}
+\centering
+\includegraphics[scale=0.3]{AllPMSites} 
+\end{figure}
+
+\begin{itemize}	
+\item Ground sites of PM$_{2.5}$ measurements, as collected by EPA
+\item Data collected either daily, every three days or every six days.
+\end{itemize}	
+\end{frame}
+
+
+%--------------------------------------------------------------------------------------------------------------
+\begin{frame}{AOD}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{AODpoints_06012009.png}
+\caption{AOD readings on Jun 6, 2009}
+\label{fig:locations}
+\end{figure}
+
+\begin{itemize}	
+\item AOD data collected over Pacific Ocean, near coast of California.
+\item Satellites travel around the Earth once every 16 days.
+\item AOD data is collected at each location least twice a month.
+\end{itemize}		
+\end{frame}
+
+%------------------------------------------Methods--------------------------------------------------------
+\begin{frame}{Data Cleaning}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.25]{figs/pm13.png} 
+\hspace{1mm}
+\includegraphics[scale=0.3]{figs/mappmsiteshawaii.jpg}
+\caption{(left) CA PM$_{2.5}$ sites we compared with AOD data, (right) Hawaii PM$_{2.5}$ sites we compared with AOD data}
+\end{figure}
+
+\begin{itemize}
+\item Picked PM sites closest to coast ($13$ in California, $9$ in Hawaii)
+\item Found closest locations of AOD measurements to these sites
+\item Matched data by date of AOD/PM readings
+
+\end{itemize}
+\end{frame}
+
+%--------------------------------------------------------------------------------------------------------------
+\begin{frame}{Using additional data}
+
+Challenges
+\begin{itemize}
+\item AOD and PM$_{2.5}$ datasets are quite sparse in space-time.
+\item Need additional information to improve fits and predictions.
+\end{itemize}
+\vspace{5mm}
+
+Covariates used in this analysis 
+\begin{itemize}	
+\item wind speed and direction
+\item humidity
+\item planetary boundary layer height
+\item air temperature
+\item added values of these measures at each location at each date
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{Overall big picture}
+
+{ \large Fuse AOD and PM$_{2.5}$ datasets to} 
+\begin{itemize}
+\item Understand their quantitative relationships,
+\item Predict PM measurements from years $1991-2000$.
+\end{itemize} 
+\begin{figure}
+\centering
+\includegraphics[scale=0.28]{figs/overall}
+\end{figure}
+
+\end{frame}
+
+
+%------------------------------------------Models-----------------------------------------------------------
+\iffalse
+\section{Models}
+\begin{frame}{Models}
+\begin{itemize}	
+\item PM$_{2.5}$ time series
+\item add gif here
+\end{itemize}
+\end{frame}
+%--------------------------------------------------------------------------------------------------------------
+\begin{frame}{Models}
+\begin{itemize}	
+\item Spatial Interpolation of PM$_{2.5}$
+\item add gif/image here
+\end{itemize}
+\end{frame}
+%--------------------------------------------------------------------------------------------------------------
+\begin{frame}{Models}
+\begin{itemize}	
+\item Relationships between AVHRR AOD and surface PM
+\item Yu - add stuff
+\end{itemize}
+\end{frame}
+\fi
+%------------------------------------------Experiments-----------------------------------------------------------
+\section{Experiments}
+\subsection{PM$_{2.5}$ time series}
+
+\begin{frame}{PM$_{2.5}$ Time Series}
+\begin{figure}
+\centering
+\includegraphics[width=70mm]{figs/ts1.png}
+\end{figure}
+\begin{itemize}
+\item Goal is to make predictions about PM$_{2.5}$ in $2015$.
+\item Overall pollution appears to be decreasing.
+\item Seasonal variations are observed.
+\item Two methods used -- Holt-Winter Exponential smoothing and ARIMA model 
+\end{itemize}  
+\end{frame}
+
+
+
+\begin{frame}{Holt-Winters Exponential Smoothing}
+\begin{figure}
+\centering
+%\includegraphics[width=0.9\linewidth, height=30mm]{figs/ts2.png} \vspace{2mm}
+%\includegraphics[width=0.9\linewidth, height=30mm]{figs/ts3.png}
+\includegraphics[scale=0.25]{figs/ts2.png} \vspace{2mm}
+\includegraphics[scale=0.25]{figs/ts3.png}
+\end{figure}
+\begin{itemize}
+\item Mean square error is $5.5$ but the mean of PM$_{2.5}$ values is 12.6
+\item Similar result observed using different method - ARIMA.
+\item PM$_{2.5}$ dataset itself not sufficient to make predictions
+\item This motivates using covariates and AOD data.
+\end{itemize}  
+\end{frame}
+
+\begin{frame}{Spatial interpolation of AOD data}
+\begin{figure}
+\centering
+\includegraphics[scale=0.4]{figs/Spatial_1}
+\end{figure}
+
+\begin{itemize}
+\item Interpolation using Ordinary Kriging.
+\item The quality of interpolation depends on availability of data. 
+\item Understand the transport of pollutants to inform regression models.
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Spatial interpolation of PM$_{2.5}$ data}
+{\cub \large Track $2008$ California Wildfire}
+\begin{figure}
+\centering
+\includegraphics[scale=0.45]{figs/Spatial2}
+\end{figure}
+Need further validation with satellite date to confirm plume tracking.
+\end{frame}
+
+
+\subsection{AOD and PM$_{2.5}$ fitting}
+
+\frame{\frametitle{$\PM$ vs AOD}
+\begin{itemize} 
+\setlength\itemsep{2.5em}
+\item {\cub Goal} - relationship between ${\cub \PM}$ and {\cub AOD} in presence of other meteorological variables. 
+\item Response variable - ${\cub \PM}$ - ``What we want to predict''
+\item Covariates - ``What we use to predict'' 
+\begin{itemize} 
+\setlength\itemsep{1.5em}
+\item continuous variables: {\cub wind direction, wind velocity, relative humidity, air temperature}
+\item factors: {\cub season} --  a discrete variable that models  seasonality. 
+\end{itemize}
+\item Model the relationship at a particular ${\cub \PM}$ site or combine data from two nearby ${\cub \PM}$ sites along the west coast of United States. 
+\end{itemize}
+}
+
+\frame{\frametitle{Snapshot of the dataset}
+\begin{figure}[h]
+\centering
+\includegraphics[width = 110mm]{figs/calidata.jpeg}
+\end{figure}
+\begin{itemize} 
+\item ${\cub \PM}$ sites' coordinates near Eureka, CA - (40.8, -124) and (40.9, -123)
+\item This site was chosen since it provides best fits. 
+\end{itemize}
+}
+
+\frame{\frametitle{Preliminary Analysis I}
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.34]{figs/pairs.jpeg}
+\end{figure}
+\begin{itemize} 
+\item Shows nonlinear relationships between covariates and responses. 
+\item skewed data, outliers. 
+\end{itemize}}
+
+\frame{\frametitle{Multiple Linear Regression Model}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.35]{figs/residual.pdf}
+\caption{Some model diagnostics}
+\end{figure}
+{\large Multiple linear regression does not provide good fits.}
+ 
+}
+
+
+\frame{\frametitle{Generalized Additive Model}
+\begin{figure}[h]
+\centering
+\includegraphics[width = 90mm]{figs/gam.pdf}
+\end{figure}
+\begin{itemize}
+\item Regression splines: 
+$$s_{j}(x) \> =  \> \sum_{j,k} \beta_{jk} {\phi_{jk}}(x) = {\boldsymbol{\beta{'}}}{\phi_j}$$
+\item Estimate ${\cub \boldsymbol\beta}$ by minimizing the penalized least squares objective function. 
+\end{itemize}
+
+}
+
+
+\frame{\frametitle{Results I}
+\begin{itemize} 
+\setlength\itemsep{1.5em}
+\item {\cub Formula}: $\PM$ $\sim$ AOD + s(windspeed) $+$ s(winddirection) $+$ s(hum) $+$ s(airtemp) $+$ season
+\item {\cub Coefficient} = 4.085, ${\cub \beta_{AOD}}$ = -2.283 (t = 3.84, p-value = 0.0023). 
+\item ${\cub R^2}$ = 0.782, {\cub Deviance} = $81.4\%$
+\item We compared various models using a subset of covariates and chose the model with the smallest {\cub AIC} (Akaike's Information Criterion). 
+\end{itemize} 
+}
+
+\frame{\frametitle{Results II}
+\begin{figure}[h]
+\centering
+\includegraphics[width=80mm]{figs/pred.jpeg}
+\end{figure}
+\begin{itemize}
+\item {\cub Equivalent degrees of freedom} = (2.69, 2.54, 2.37, 3.00)
+\end{itemize}
+}
+
+
+
+
+
+
+
+%-------------------------------------------Conclusions---------------------------------------------------------
+\include{conc}
+
+%--------------------------------------------------------------------------------------------------------------
+\begin{frame}{Acknowledgments}
+\begin{itemize}
+\item Faculty mentors
+\item EPA -- Brett Gantt and Elizabeth Mannshardt
+\item  NOAA, specifically Jessica Matthews for help with  satellite data
+\item IMSM
+\item NSF
+\end{itemize}
+\end{frame}
+
+%--------------------------------------------------------------------------------------------------------------
+\begin{frame}{References}
+	\begin{thebibliography}{99}
+	\beamertemplatearticlebibitems
+	
+	
+\bibitem{lee} Lee, H. J., et al. ``A novel calibration approach of MODIS AOD data to predict PM2. 5 concentrations.'' Atmos. Chem. Phys 11.15 (2011): 7991-8002.
+
+\bibitem{van} van Donkelaar, Aaron, et al. ``Use of satellite observations for long-term exposure assessment of global concentrations of fine particulate matter.'' Diss. University of British Columbia, 2015.
+
+\bibitem{li} Li, Jing, Barbara E. Carlson, and Andrew A. Lacis. ``How well do satellite AOD observations represent the spatial and temporal variability of PM 2.5 concentration for the United States?.'' Atmospheric Environment 102 (2015): 260-273.
+
+\bibitem{liu} Liu, Yang, Christopher J. Paciorek, and Petros Koutrakis. ``Estimating Regional Spatial and Temporal Variability of PM$_{2.5}$ Concentrations Using Satellite Data, Meteorology, and Land Use Information.'' Environmental health perspectives 117.6 (2009): 886. 
+	
+	\bibitem{noaa} National Centers for Environmental Information. National Oceanic and Atmospheric Administration. Department of Commerce, n.d. Web. 23 July 2016. \textit{https://www.ncdc.noaa.gov/cdr/atmospheric/avhrr-aerosol-optical-thickness}.
+	
+\bibitem{epa} United States Environmental Protection Agency. AirData. EPA, 5 July 2016. Web. 23 July 2016. \textit{https://www3.epa.gov/airdata/}.
+	
+
+	\end{thebibliography}
+%use this as reference for citations	
+%	
+%	\bibitem{selfridge} \textcolor{black}{J. Brillhart; D. H. Lehmer; J. L. Selfridge; B. Tuckerman; S. S. Wagstaff, Jr., 
+%	Factorizations of $b^n \pm 1$, $b = 2,3,5,6,7,10,11,12$ Up to High Powers, $3\rdd$ edition, Contemporary 
+%	Mathematics, Vol. 22, American Math. Soc., Providence, 2002.}
+%	
+%	\beamertemplatearticlebibitems
+%	\bibitem{erdos} \textcolor{black}{P. Erd\H{o}s, On integers of the form $2^k + p$ and some related problems, 
+%	\textit{Summa Brasil. Math.} \textbf{2} (1950) 113--123.}
+%	
+%	\bibitem{mkozekRS} \textcolor{black}{M. Filaseta, C. Finch, M. Kozek, On powers associated with Sierpi\'nski numbers, 
+%	Riesel numbers and Polignac's conjecture. \textit{J. Number Theory} \textbf{128} (2008), no. 7, 1916--1940.}
+%	
+%	\bibitem{marksenior} \textcolor{black}{M. Filaseta; M. Kozek; C. Nicol; J. Selfridge, Composites that remain composite 
+%	after changing a digit, \textit{J. Comb. Number Theory} \textbf{2} (2010), no. 1, 25--36 (2011).}
+%	\end{thebibliography}
+\end{frame}
+
+\end{document}

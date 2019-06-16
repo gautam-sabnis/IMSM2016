@@ -1,0 +1,8 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{Data Sources and methods}{6}{0}{2}
+\beamer@sectionintoc {3}{Experiments}{12}{0}{3}
+\beamer@subsectionintoc {3}{1}{PM$_{2.5}$ time series}{13}{0}{3}
+\beamer@subsectionintoc {3}{2}{AOD and PM$_{2.5}$ fitting}{17}{0}{3}
+\beamer@sectionintoc {4}{Conclusions}{24}{0}{4}

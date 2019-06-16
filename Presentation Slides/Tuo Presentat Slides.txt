@@ -1,0 +1,43 @@
+%%%%%%%%%%I am in section 'Experiment'%%%%%%%%%
+
+
+\begin{frame}{PM2.5 Time Series}
+\includegraphics[width=80mm]{ts1.png}
+\begin{itemize}
+
+\item Overall downward trend
+\item Seasonality
+\item Two methods
+\end{itemize}  
+\end{frame}
+
+
+
+\begin{frame}{Holt-Winters Exponential Smoothing}
+\includegraphics[width=0.9\linewidth, height=30mm]{ts2.png}
+
+
+\includegraphics[width=0.9\linewidth, height=30mm]{ts3.png}
+\begin{itemize}
+
+\item Mean square error is 5.5 but the mean of PM2.5 values is 12.6
+\end{itemize}  
+\end{frame}
+
+
+\begin{frame}{ARIMA model}
+\includegraphics[width=0.9\linewidth]{ts4.png}
+
+\end{frame}
+
+
+\begin{frame}{ARIMA model}
+\includegraphics[width=0.9\linewidth, height=30mm]{ts5.png}
+
+
+\includegraphics[width=0.9\linewidth, height=30mm]{ts6.png}
+\begin{itemize}
+
+\item Mean square error is 9.7.
+\end{itemize}  
+\end{frame}
