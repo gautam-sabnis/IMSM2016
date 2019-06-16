@@ -1,0 +1,22 @@
+setwd('C:\\Users\\Tuo\\Desktop')
+a = list.files("Daily")                                                       
+dir = paste("./Daily/",a,sep="")                                      
+n = length(dir)   
+
+mat1=matrix(rep(seq(-180,180,0.1),1801),3601,1801)
+mat2=matrix(rep(seq(-90,90,0.1),3601),3601,1801,byrow=T)
+mat11=mat1[531:641,1201:1401]
+mat22=mat2[531:641,1201:1401]
+
+for(i in 1:n) {
+  newdata=nc_open(file = dir[i])
+  aod=ncvar_get(newdata,start=c(1,531,1201),count = c(1,111,201))
+  n0=sum(!is.na(aod))
+  new=matrix(0,n0,4)
+  new[,2]=mat22[!is.na(aod)]
+  new[,3]=mat11[!is.na(aod)]
+ new[,4]=aod[!is.na(aod)]
+  new[,1]=rep(as.numeric(substring(dir[i],36,43)),n0)
+  write.table(new,'haha.txt',append=T)
+  cat(i)
+}
