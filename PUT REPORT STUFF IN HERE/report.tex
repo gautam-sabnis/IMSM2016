@@ -1,0 +1,103 @@
+\documentclass[10pt]{article}
+\usepackage[final]{graphicx}
+\usepackage{amsfonts}
+
+\topmargin -.5in
+\textwidth 6.6in
+\textheight 9in
+\oddsidemargin 0in
+
+\def\ds{\displaystyle}
+\def\d{\partial}
+
+\begin{document}
+
+\centerline{\large \bf Fusing surface and satellite-derived PM observations to determine the impact } 
+
+\centerline{\large \bf of international transport on coastal PM$_{2.5}$ concentrations in the western U.S.}
+
+\vspace{.1truein}
+
+\def\thefootnote{\arabic{footnote}}
+\begin{center}
+  Neha Bora\footnote{Department of Mathematics, Iowa State University},
+  Tuo Chen\footnote{Department of Statistics, University of Florida},
+  Dana Cochran\footnote{Department of Mathematics, California State University Channel Islands},
+  Kelly Dougan\footnote{Department of Mathematics, The State University of New York at Buffalo},
+  Gautam Sabnis\footnote{Department of Statistics, Florida State University}
+  Chuanping Yu \footnote{Industrial and System Engineering, Georgia Institute of Technology}
+\end{center}
+
+%\vspace{.1truein}
+
+\begin{center}
+Faculty Mentors: mentor 1\footnote{Company},
+Mentor 2\footnote{University}
+\end{center}
+
+
+\vspace{.3truein}
+\centerline{\bf Abstract}
+
+Long term exposure to PM$_{2.5}$ is associated with human health complications (insert citation). Surface readings of PM$_{2.5}$ in the states on the West Coast of the United States have reported to be higher than allowed by the Clean Air Act. One possible reason for this is international transport of air pollution on PM$_{2.5}$. This project explores the relationship between the surface readings of PM$_{2.5}$ from coastal sites with the AOD measurements from the AVHRR in these regions. Once we found a correlation between these readings, we implemented a model to approximate PM$_{2.5}$ concentrations in the Pacific ocean, where surface readings are not possible.
+
+\section{Introduction}
+For this project, we used a data set of Climate Data Record (CDR) of Aerosol Optical Thickness (AOT) provided to us by the National Oceanic and Atmospheric Administration (NOAA), \cite{noaa}. This was obtained through the''Advanced Very High Resolution Radiometer (AVHRR) that provides an optical measure of aerosol column loading derived form the global ocean pixel-level PATMOS-x AVHRR clear-sky reflectance CDR at $0.63\mu m$ channel," \cite{noaa}. This satellite provides global readings of oceanic measurements of AOT. They have both daily and monthly data sets for the years $1981$-$2009$,\cite{noaa}.
+
+Another data set provided to us was the PM$_{2.5}$ measurements for approximately a hundred on land sites in California, Oregon, Washington, Alaska, and Hawaii. This was provided by the United States Environmental Protection Agency (EPA). PM$_{2.5}$ is particulate matter that is less than $2.5$ micrometers in diameter and is often referred to as the greatest health risk of pollutants, \cite{epa}.  PM$_{2.5}$ is so small that it can get lodged into lungs and make it difficult for people to breath. This creates an increase in respiratory problems. Common contributing factors to PM$_{2.5}$ include emissions for motor vehicles, power plants, wood burning, and dust from paved or unpaved roads, \cite{epa}.
+
+The AVHRR takes approximately $16$ days to cover the entire earth. We thus have roughly two data values for each month of the year. The PM$_{2.5}$ data is measured either every day, once ever three days, or once every six days. There are times when the measurements from the satellite gave us erroneous data due to light reflection from cloud covers. Additionally, there are times when the PM$_{2.5}$ sensors malfunctioned resulting in no data. Hence, we sometimes have months that have only two or less PM$_{2.5}$ data and/or no AOT data. 
+
+\section{The Problem}
+Domestic sources of emissions are the primary cause of air pollution in the U.S; however, there is potential for international flow of air pollution into the U.S. to be a contributing factor in some coastal cities high measurements of air pollution. The impact that international transport of air pollution has on our ability to attain air quality standards or other environmental objectives in the U.S. has yet to be fully characterized. In other words, cities in the western U.S. may unknowingly be receiving high pollutant values through no fault to themselves. The goal in this project is to establish a connection between AOT measurements from the AVHRR satellite to determine the impact of international transport of air pollution on PM$_{2.5}$ concentrations in coastal areas of the western U.S. We examined PM$_{2.5}$ sites that were close to the coast. Most of our sites were situated in California, with a few in Washington and a handful in Hawaii. The map in figure 1 shows the 13 sites that were used along the Western U.S. coast. 
+%\begin{figure}[ht!]
+%\centering
+%\includegraphics[width = 90mm]{pmsites.jpg}
+%\caption{}
+%\label{graph3}
+%\end{figure}
+
+\section{The Approach}
+
+One method we used to analyze trends in the PM$_{2.5}$ data was to make an animation to show the change in the concentration of PM$_{2.5}$  over time. The animation plots points at each site where the PM$_{2.5}$ data was collected, with color varying depending on the intensity of the reading, with darker colors indicating a larger concentration of PM$_{2.5}$. After analyzing this data we noticed (insert conclusion here... talk about it more...). The animation is available online (insert website-github?).
+
+
+\section{Computational Experiments}
+Give enough details so that readers can duplicate your experiments.
+
+\begin{itemize}
+\item Describe the precise purpose of the experiments, and what they 
+are supposed to show.
+
+\item Describe and justify your test data, and any assumptions you made to 
+simplify the problem.
+
+\item Describe the software you used, and the 
+parameter values you selected.
+
+\item 
+For every figure, describe the meaning and units of the coordinate axes, 
+and what is being plotted.
+
+\item Describe the conclusions you can draw from your experiments
+\end{itemize}
+
+\section{Summary and Future Work}
+\begin{itemize}
+\item Briefly summarize your contributions, and their possible
+impact on the field (but don't just repeat the abstract or introduction).
+\item Identify the limitations of your approach.
+\item Suggest improvements for future work.
+\item Outline open problems.
+\end{itemize}
+
+\begin{thebibliography}{99}
+
+\bibitem{noaa} National Centers for Environmental Information. National Oceanic and Atmospheric Administration. Department of Commerce, n.d. Web. 23 July 2016. \textit{https://www.ncdc.noaa.gov/cdr/atmospheric/avhrr-aerosol-optical-thickness}.
+\bibitem{epa} United States Environmental Protection Agency. AirData. EPA, 5 July 2016. Web. 23 July 2016. \textit{https://www3.epa.gov/airdata/}.
+
+%http://disc.sci.gsfc.nasa.gov/giovanni/additional/users-manual/G3_manual_Chapter_19_AOT_comparison#sat_sensor
+
+\end{thebibliography}
+
+\end{document}

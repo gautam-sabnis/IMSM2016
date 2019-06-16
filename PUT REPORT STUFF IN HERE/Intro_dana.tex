@@ -1,0 +1,55 @@
+\documentclass[10pt]{article}
+\usepackage[final]{graphicx}
+\usepackage{amsfonts}
+
+\topmargin -.5in
+\textwidth 6.6in
+\textheight 9in
+\oddsidemargin 0in
+\usepackage{color}
+\newcommand{\arvind}[1]{{\color{red}{Arvind: {#1}}}}
+\newcommand{\kelly}[1]{{\color{blue}{Kelly: {#1}}}}
+
+\def\ds{\displaystyle}
+\def\d{\partial}
+\linespread{1.5}
+
+\begin{document}
+
+
+\section{Introduction}
+%start with info on PM and AOD - definition, how they are monitored and that they measure harmful pollutants
+
+PM$_{2.5}$ is particulate matter that is less than $2.5$ micrometers in diameter and is often referred to as the greatest health risk of pollutants~\cite{epa}. For this project, we used two different sources of data -- Aerosol Optical Depth (AOD) obtained from the Advanced Very High Resolution Radiometer (AVHRR) satellite measurements, and surface PM$_{2.5}$ measurements. AOD measurements refer to a quantitative measure of the amount of light that is obstructed by particles in the atmospheric column and are also referred to as aerosol optical thickness (AOT). Because AOD measures any particle from the satellite to the earth's surface, the measurements of the amount of the specific pollutant PM$_{2.5}$ are, for the most part, measured by ground sites.
+
+Several previous studies have attempted to find correlations between PM$_{2.5}$ readings and AOD readings. Liu et al (2009) looked into estimating PM$_{2.5}$ concentrations using the satellite AOD data, meteorology, and land use information in states surrounding Massachusetts.\cite{Liu} In their study, they were able to predict PM$_{2.5}$ values better with an AOD model than with a non-AOD model. Lee et al (2011) developed a novel approach in which he used a mixed effects model to predict day-specific PM$_{2.5}$ concentrations based on AOD measurements.\cite{lee} Li et al (2015) investigated if variability of AOD measurements can be used to infer space-time variability of PM readings. Their model resulted in good spacial agreement in the Eastern region but not the central or Western regions of the U.S. Overall, they concluded that the relationship between PM and AOD varies over different locations and times, and that a better prediction model would be one that focuses on a smaller region or time frame. 
+%more on this.. anything on the method that compares to ours?
+
+%my paper stuff so far
+\kelly{Is this next paragraph useful?}
+Van Donkelaar et al (2015) looked for global trends of PM$_{2.5}$ concentrations from satellite data. Using a decadal mean over the years 2001-2010, in North America, they found a relatively higher concentration of PM in the east coast and in the San Joaquin valley of California. In Asia, they found extremely high concentration, over 60 $\mu g/m^3$ and 80 $\mu g/m^3$ in Northern India and Eastern Asia, respectively. They found that the population-weighted concentrations in East Asia nearly doubled the global mean.
+These studies suggest that AOD-based models can be used to predict PM concentrations on a daily basis, using a statistical model interpolating over a sufficient small space and time scale.
+
+
+Domestic sources of emissions are the primary cause of air pollution in the U.S.; however, there is potential for international flow of air pollution into the U.S. to be a contributing factor in some coastal cities having recorded high measurements of air pollution. The impact that international transport of air pollution has on our ability to attain air quality standards or other environmental objectives in the U.S. has yet to be fully characterized. In other words, cities in the western U.S. may unknowingly be receiving high pollutant values from external sources. The goal in this project is to establish a relationship between AOD measurements from the AVHRR satellite and PM$_{2.5}$ measurements on the coast of California and Hawaii. We aim to use AOD-PM relationship to predict PM$_{2.5}$ concentrations over the Pacific Ocean. This will help us to determine the impact of international transport of air pollution on PM$_{2.5}$ concentrations in coastal areas of the western U.S. 
+
+In addition, we analyze times series models of surface PM$_{2.5}$ measurements at each site. Spatial interpolation is also used on all PM$_{2.5}$ sites in California to help determine a trend in the readings. These images were used to help establish a visualization of high emission events in the state such as wildfires.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}

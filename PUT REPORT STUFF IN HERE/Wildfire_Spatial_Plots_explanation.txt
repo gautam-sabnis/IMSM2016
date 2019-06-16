@@ -1,0 +1,16 @@
+Basin Complex wildfire in Monterey County California started on 21 June, 2008 and was contained by 27 July, 2008. One of the most common courses of PM2.5 is wildfires. Hence, we would expect it to reflect in the PM2.5 spatial plots. 
+Firstly, we have spatial plots for PM2.5 on 2nd June, 2008. We see that, on a normal day, PM2.5 concentration is high around Los Angelos. We see this pattern to be quite consistent for most of our dataset. We also know that LA is the most polluted city iin California and hence, it expected to see higher concentration of PM 2.5.  
+insert{Interpolated_PM2008_0154.png}
+insert{Standard_Error_PM2008_0154.png}
+
+To trace the special case of a wildfire, we observe PM2.5 spatial plots over the western states of United States from 27th June to 30th June 2008. Here, we observe the PM2.5 concentration is higher in northern California. Following the spatial plot over 4 days, we  can notice PM2.5 region  with higher concentration to be moving towards the north. These plots verfiy the presence of a wildfire and the  spatial plots over time suggest the direction of movement of the smoke produced due to the wildfire. 
+insert{Interpolated_PM2008_0179.png}
+insert{Standard_Error_PM2008_0179.png}
+
+(insert *180,*181,*182.png)  # 8 figures = 4X2 matrix
+
+We plan to verify our results by comparing our observations with the a different satellite data and/or satellite images over that period.
+
+http://www.fire.ca.gov/communications/downloads/fact_sheets/20LACRES.pdf
+http://assets.climatecentral.org/pdfs/WildfiresAndAirPollution.pdf
+http://www.stateoftheair.org/2013/city-rankings/most-polluted-cities.html?referrer=https://en.wikipedia.org/

@@ -1,0 +1,26 @@
+\documentclass[10pt]{article}
+\usepackage[final]{graphicx}
+\usepackage{amsfonts}
+
+\topmargin -.5in
+\textwidth 6.6in
+\textheight 9in
+\oddsidemargin 0in
+
+\def\ds{\displaystyle}
+\def\d{\partial}
+        
+        \DeclareGraphicsExtensions{.pdf,.jpg,.png}
+%\linespread{1.5}
+
+\begin{document}
+
+
+\section{Introduction}
+	For this project, we used a data set of Climate Data Record (CDR) of Aerosol Optical Thickness (AOT) provided to us by the National Oceanic and Atmospheric Administration (NOAA), \cite{noaa}. This was obtained through the "Advanced Very High Resolution Radiometer (AVHRR) that ?provides an optical measure of aerosol column loading derived form the global ocean pixel-level PATMOS-x AVHRR clear-sky reflectance CDR at $0.63\mu m$ channel," \cite{noaa}. This satellite provides global readings of oceanic measurements of AOT. They have both daily and monthly data sets for the years $1981$-$2009$,\cite{noaa}. 
+
+Another data set provided to us was the PM $_{2.5}$ measurements for approximately a hundred on land sites in California, Oregon, Washington, Alaska, and Hawaii. This was provided by the United States Environmental Protection Agency (EPA). PM $_{2.5}$ is particulate matter that is less than $_{2.5}$ micrometers in diameter and is often referred to as the greatest health risk of pollutants, \cite{epa}.  PM $_{2.5}$ is so small that it can get lodged into lungs and make it difficult for people to breath. This creates an increase in respiratory problems. Common contributing factors to PM $_{2.5}$ include emissions for motor vehicles, power plants, wood burning, and dust from paved or unpaved roads, \cite{epa}. 
+
+The AVHRR takes approximately $16$ days to cover the entire earth. We thus have roughly two data values for each month of the year. The PM $_{2.5}$ data is measured either every day, once ever three days, or once every six days. There are times when the measurements from the satellite gave us erroneous data due to light reflection from cloud covers. Additionally, there are times when the PM $_{2.5}$ sensors malfunctioned resulting in no data. Hence, we sometimes have months that have only two or less PM $_{2.5}$ data and/or no AOT data. 
+
+\end{document}

@@ -1,0 +1,29 @@
+Spatial Statistics
+
+We try to build spatial model for the AOT and PM data.
+In spatial statistics, we study the relations and variation in data with respect to its location. 
+
+Spatial statistics on a geological data is carried out in two stages:
+
+1. Analyze the dataset to build a relatedness (covariance) amongst values based on their geographical location. In the language of statistics, this means building a variogram which models variance between values at two locations according to the distance and direction between them.
+2. The next step is to estimates values at unsampled locations. This process is called "Kriging". The interpolated values are obtained by Kriging are modeled using a Gaussian process directed by prior covariances. In contrast, the focus while using polynomial interpolation is to optimize the smoothness of the interpolated values.
+
+We use ordinary kriging to interpolate AOD and PM2.5 values.
+
+In ordinary kriging, the interpolated value is a weighted linear combination of sampled values. Ordinary kriging assumes constant mean and  residual mean error to be 0. Along with this, ordinary kriging aims to minimize the variance of error. The variogram gives the covariances between different values. Ordinary kriging is obtained by using probability models that calculate the bias and error in variance, which can then be used to choose weights for neighbouring sampled locations such that mean error for the model is exactly zero and modelled error variance is minimized. We have used maximum likelihood probability model to estimate parameters. We obtain the spatial plots and standard error associated with  the interpolations using this method of kriging. 
+
+There are 284 sensor sites that recorded the PM2.5 measurements. We use the daily PM2.5 measurements values at these sites to make spatial interpolation plots. Similarly, spatial interpolation plots are constructed for AOD values. 
+
+Following figure(1) displays the 107 sensor sites where PM2.5 data was collected on 7th January, 2009. 
+insert{SamplePoints07012009.png}
+This figure(2) displays the spatially interpolated plot obtained by using ordinary kriging of the sample data. Figure(3) represents the error associated with the interpolated values. As expected, we see the error increases as distance from the sample data increases. 
+figure(2) insert{Interpolated_PM2009_0007.png}
+figure(3) insert{Standard_Error_PM2009_0007.png}
+
+Similarly, we construct spatially interpolated plots for AOD data obtained on 6th January, 2009. Following figure(4) displays sites  where AOD was measured by the satellite.
+insert {AODpoints_06012009.png}
+his figure(2) displays the spatially interpolated plot obtained by using ordinary kriging of the sample data. Figure(3) represents the error associated with the interpolated values. As expected, we see the error increases as distance from the sample data increases. 
+figure(2) insert{Interpolated_AOD2009_0006.png}
+figure(3) insert{Standard_Error_AOD2009_0006.png}
+
+

@@ -1,0 +1,46 @@
+\documentclass[10pt]{article}
+\usepackage[final]{graphicx}
+\usepackage{amsfonts}
+
+\topmargin -.5in
+\textwidth 6.6in
+\textheight 9in
+\oddsidemargin 0in
+\usepackage{color}
+\newcommand{\arvind}[1]{{\color{red}{Arvind: {#1}}}}
+\newcommand{\kelly}[1]{{\color{blue}{Kelly: {#1}}}}
+%\newcommand{\pm}{PM\ensuremath{_{2.5}}}
+
+\def\ds{\displaystyle}
+\def\d{\partial}
+\linespread{1.5}
+
+\begin{document}
+
+
+\subsection{Description of data}
+
+The first data set of Climate Data Record (CDR) of AOT was obtained from the National Oceanic and Atmospheric Administration (NOAA)~\cite{noaa}. \kelly{what does this next sentence mean???} This data was collected using AVHRR, which is an optical measure of aerosol column loading derived from the global ocean pixel-level PATMOS-x AVHRR clear-sky reflectance CDR at $0.63$ $\mu$m channel~\cite{noaa}. %This satellite provides global readings of oceanic measurements of AOD on a daily, as well as a monthly\kelly{(?)} scale, for the years $1981$-$2009$~\cite{noaa}. 
+The second data set, provided by EPA, contained the surface PM$_{2.5}$ measured in California, Oregon, Washington, Alaska, and Hawaii.  \cite{epa}.
+
+The AVHRR takes approximately $16$ days to make one revolution around the earth. We, thus, have roughly two data values for each month of the year at each pair of coordinates, for the years 1981-2009. The frequency of the PM$_{2.5}$ data collected from each site varies from once every day to once every six days. On certain occassions, the measurements from the satellite were found to be  erroneous due to light reflection from cloud covers. Additionally, there are times when the PM$_{2.5}$ sensors malfunctioned resulting in no data. These points were appropriately removed from the datasets. %Hence, we sometimes have months that have only two or less PM$_{2.5}$ data and/or no AOT data. 
+
+Additionally we have satellite data for wind speed, wind direction, air temperature, relative humidity, and  height of the planetary boundary layer. This data was incorporated in our models to give more accurate results. The wind data was provided into a u wind and v wind format, where u represents wind blowing towards the east, and v represents wind blowing toward the north. The u wind needed to be scaled by a factor of $0.003052037$, as indicated in the file information. The formulas to get the wind speed and the wind direction are below, where $uwind$ and $vwind$ represent the u and v values. \cite{wind}
+
+\begin{center}
+windspeed = $\sqrt{uwind^2 + vwind^2)}$
+
+\bigskip
+
+winddirection = $\arctan(-uwind, -vwind) * (180/\pi) + 180$
+
+\end{center}
+
+\subsection{Challenges}
+One of the challenges with the given data set was its size. For example, the file size for one year of AOD data was 9.47 GB, which exceeded the memory of our systems. Instead of using AOD data for one year in one file, we dowloaded daily AOD data. We restricted our AOD data set to the years 2006-2009, where we had access to the files in daily format. %\kelly{Ask Gautam about these specifics, write in a positive way}We combined the results in MATLAB. This process was a bit time consuming and we thus only received AOD data for the years 2006 - 2009. 
+
+The next challenge was with the format of the latitude and longitude of wind, air temperature, relative humidity, and height of the planetary boundary layer data. The data covered North America and was in the Lambert Conformal Conic map projection. However, the PM$_{2.5}$ and AOD data are in geographical coordinates. The geographical coordinates of the PM$_{2.5}$ sites were converted to Lambert Conformal Conic coordinates in order to extract the values of these meteorological variables. 
+
+The PM$_{2.5}$ sensor readings had some challenges as well. The main issue was that not all sensor sites pick up measurements on the same day. Thus, if we wanted to look at sensor readings on say Jan 1, 2008, we may only have 10 sites that produce measurements, but if we took a look at Jan 2, 2008, we may have 40 sites that produce measurements. This proved to be a little challenging when it came time to analyze sensor readings for certain dates. Because of this, on many days, we had insufficient data to construct meaningful spatial interpolations.
+
+\end{document}

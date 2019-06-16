@@ -1,0 +1,693 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  27 JUL 2016 11:49
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**epafinalpaper1
+(./epafinalpaper1.tex
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks15
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2015/05/11 v1.16 mathematical typesetting tools
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count88
+\calc@Bcount=\count89
+\calc@Adimen=\dimen105
+\calc@Bdimen=\dimen106
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count90
+\calc@Cskip=\skip45
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip46
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks16
+\ex@=\dimen107
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen108
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count91
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count92
+\leftroot@=\count93
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count94
+\DOTSCASE@=\count95
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen109
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
+\dotsspace@=\muskip11
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks17
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks18
+\eqnshift@=\dimen110
+\alignsep@=\dimen111
+\tagshift@=\dimen112
+\tagwidth@=\dimen113
+\totwidth@=\dimen114
+\lineht@=\dimen115
+\@envbody=\toks19
+\multlinegap=\skip47
+\multlinetaggap=\skip48
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count103
+\l_MT_multwidth_dim=\dimen116
+\origjot=\skip49
+\l_MT_shortvdotswithinadjustabove_dim=\dimen117
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen118
+\l_MT_above_intertext_sep=\dimen119
+\l_MT_below_intertext_sep=\dimen120
+\l_MT_above_shortintertext_sep=\dimen121
+\l_MT_below_shortintertext_sep=\dimen122
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2015/03/04 v2.20.2
+\thm@style=\toks21
+\thm@bodyfont=\toks22
+\thm@headfont=\toks23
+\thm@notefont=\toks24
+\thm@headpunct=\toks25
+\thm@preskip=\skip50
+\thm@postskip=\skip51
+\thm@headsep=\skip52
+\dth@everypar=\toks26
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen123
+\captionmargin@=\dimen124
+\captionwidth=\dimen125
+\caption@tempdima=\dimen126
+\caption@indent=\dimen127
+\caption@parindent=\dimen128
+\caption@hangindent=\dimen129
+)
+\c@ContinuedFloat=\count104
+)
+\c@subfigure=\count105
+\c@subtable=\count106
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2014/10/28 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count107
+\float@exts=\toks27
+\float@box=\box28
+\@float@everytoks=\toks28
+\@floatcapt=\box29
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 142.
+)
+(./epafinalpaper1.aux)
+\openout1 = `epafinalpaper1.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count108
+\scratchdimen=\dimen130
+\scratchbox=\box30
+\nofMPsegments=\count109
+\nofMParguments=\count110
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count111
+\MPscratchDim=\dimen131
+\MPnumerator=\count112
+\makeMPintoPDFobject=\count113
+\everyMPtoPDFconversion=\toks30
+) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for U+msa on input line 30.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 30.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
+
+<pm13.png, id=23, 439.6425pt x 503.8825pt>
+File: pm13.png Graphic file (type png)
+ <use pm13.png>
+Package pdftex.def Info: pm13.png used on input line 238.
+(pdftex.def)             Requested size: 238.49121pt x 273.33806pt.
+ [4 <./pm13.png>]
+<ts1.png, id=30, 469.755pt x 352.1958pt>
+File: ts1.png Graphic file (type png)
+ <use ts1.png>
+Package pdftex.def Info: ts1.png used on input line 262.
+(pdftex.def)             Requested size: 284.52756pt x 213.32364pt.
+ [5 <./ts1.png>]
+<3.pdf, id=35, 505.89pt x 505.89pt>
+File: 3.pdf Graphic file (type pdf)
+ <use 3.pdf>
+Package pdftex.def Info: 3.pdf used on input line 295.
+(pdftex.def)             Requested size: 256.0748pt x 256.07838pt.
+ [6 <./3.pdf>] [7]
+<ts2.png, id=159, 469.755pt x 352.1958pt>
+File: ts2.png Graphic file (type png)
+ <use ts2.png>
+Package pdftex.def Info: ts2.png used on input line 385.
+(pdftex.def)             Requested size: 284.52756pt x 213.32364pt.
+
+<ts3.png, id=160, 469.755pt x 352.1958pt>
+File: ts3.png Graphic file (type png)
+ <use ts3.png>
+Package pdftex.def Info: ts3.png used on input line 398.
+(pdftex.def)             Requested size: 284.52756pt x 213.32364pt.
+ [8 <./ts2.png>]
+<ts4.png, id=165, 469.755pt x 352.1958pt>
+File: ts4.png Graphic file (type png)
+ <use ts4.png>
+Package pdftex.def Info: ts4.png used on input line 422.
+(pdftex.def)             Requested size: 284.52756pt x 213.32364pt.
+ [9 <./ts3.png>]
+<ts5.png, id=170, 469.755pt x 352.1958pt>
+File: ts5.png Graphic file (type png)
+ <use ts5.png>
+Package pdftex.def Info: ts5.png used on input line 434.
+(pdftex.def)             Requested size: 284.52756pt x 213.32364pt.
+
+<ts6.png, id=171, 469.755pt x 352.1958pt>
+File: ts6.png Graphic file (type png)
+ <use ts6.png>
+Package pdftex.def Info: ts6.png used on input line 443.
+(pdftex.def)             Requested size: 284.52756pt x 213.32364pt.
+ [10 <./ts4.png> <./ts5.png>]
+File: 3.pdf Graphic file (type pdf)
+ <use 3.pdf>
+Package pdftex.def Info: 3.pdf used on input line 467.
+(pdftex.def)             Requested size: 256.0748pt x 256.07838pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[11 <./ts6.png>] [12] <residual.pdf, id=184, 506.20839pt x 437.44049pt>
+File: residual.pdf Graphic file (type pdf)
+
+<use residual.pdf>
+Package pdftex.def Info: residual.pdf used on input line 519.
+(pdftex.def)             Requested size: 284.52756pt x 245.87946pt.
+ [13 <./residual.pdf>]
+<residual2.pdf, id=532, 506.20839pt x 437.44049pt>
+File: residual2.pdf Graphic file (type pdf)
+ <use residual2.pdf>
+Package pdftex.def Info: residual2.pdf used on input line 537.
+(pdftex.def)             Requested size: 284.52756pt x 245.87946pt.
+
+<cv_lm.pdf, id=533, 506.20839pt x 437.44049pt>
+File: cv_lm.pdf Graphic file (type pdf)
+ <use cv_lm.pdf>
+Package pdftex.def Info: cv_lm.pdf used on input line 546.
+(pdftex.def)             Requested size: 284.52756pt x 245.87946pt.
+ [14 <./residual2.pdf>]
+Overfull \hbox (0.71822pt too wide) in paragraph at lines 555--556
+ \OT1/cmr/bx/n/10 GAM model[] \OT1/cmr/m/n/10 An ap-pro-pri-ate ini-tial model 
+struc-ture would prob-a-bly in-volve mod-el-ing PM$[]$ as a linear/non-
+ []
+
+<histpmcali.jpeg, id=873, 631.35875pt x 420.57124pt>
+File: histpmcali.jpeg Graphic file (type jpg)
+ <use histpmcali.jpeg>
+Package pdftex.def Info: histpmcali.jpeg used on input line 559.
+(pdftex.def)             Requested size: 284.52756pt x 189.53767pt.
+
+[15 <./cv_lm.pdf>] <gauss_diag.jpeg, id=1033, 631.35875pt x 420.57124pt>
+File: gauss_diag.jpeg Graphic file (type jpg)
+
+<use gauss_diag.jpeg>
+Package pdftex.def Info: gauss_diag.jpeg used on input line 567.
+(pdftex.def)             Requested size: 381.5874pt x 254.1929pt.
+ [16 <./histpmcali.jpeg>] [17 <./gauss_diag.jpeg>]
+Underfull \hbox (badness 10000) in paragraph at lines 577--580
+
+ []
+
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+[18]
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ˜ in font cmtt10!
+Missing character: There is no â in font cmtt10!
+Missing character: There is no € in font cmtt10!
+Missing character: There is no ™ in font cmtt10!
+ <pred.jpeg, id=1047, 754.82pt x 589.20125pt>
+File: pred.jpeg Graphic file (type jpg)
+ <use pred.jpeg>
+Package pdftex.def Info: pred.jpeg used on input line 625.
+(pdftex.def)             Requested size: 381.5874pt x 297.86343pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 648.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 648.
+ [19]
+<SamplePoints07012009.png, id=1053, 655.44875pt x 655.44875pt>
+File: SamplePoints07012009.png Graphic file (type png)
+
+<use SamplePoints07012009.png>
+Package pdftex.def Info: SamplePoints07012009.png used on input line 680.
+(pdftex.def)             Requested size: 214.64064pt x 214.63853pt.
+
+<AODpoints_06012009.png, id=1054, 411.03563pt x 268.75406pt>
+File: AODpoints_06012009.png Graphic file (type png)
+
+<use AODpoints_06012009.png>
+Package pdftex.def Info: AODpoints_06012009.png used on input line 681.
+(pdftex.def)             Requested size: 214.64064pt x 140.33932pt.
+ [20 <./pred.jpeg>]
+<Interpolated_PM2009_0007.png, id=1058, 481.8pt x 481.8pt>
+File: Interpolated_PM2009_0007.png Graphic file (type png)
+
+<use Interpolated_PM2009_0007.png>
+Package pdftex.def Info: Interpolated_PM2009_0007.png used on input line 694.
+(pdftex.def)             Requested size: 214.64064pt x 214.63925pt.
+
+<Standard_Error_PM2009_0007.png, id=1059, 481.8pt x 481.8pt>
+File: Standard_Error_PM2009_0007.png Graphic file (type png)
+
+<use Standard_Error_PM2009_0007.png>
+Package pdftex.def Info: Standard_Error_PM2009_0007.png used on input line 695.
+
+(pdftex.def)             Requested size: 214.64064pt x 214.63925pt.
+
+<Interpolated_AOD2009_06.png, id=1060, 481.8pt x 481.8pt>
+File: Interpolated_AOD2009_06.png Graphic file (type png)
+
+<use Interpolated_AOD2009_06.png>
+Package pdftex.def Info: Interpolated_AOD2009_06.png used on input line 706.
+(pdftex.def)             Requested size: 214.64064pt x 214.63925pt.
+
+<StandardError_AOD2009_06.png, id=1061, 481.8pt x 481.8pt>
+File: StandardError_AOD2009_06.png Graphic file (type png)
+
+<use StandardError_AOD2009_06.png>
+Package pdftex.def Info: StandardError_AOD2009_06.png used on input line 707.
+(pdftex.def)             Requested size: 214.64064pt x 214.63925pt.
+ [21 <./SamplePoints07012009.png> <./AODpoints_06012009.png> <./Interpolated_PM
+2009_0007.png> <./Standard_Error_PM2009_0007.png>] <Interpolated_PM2008_0154.pn
+g, id=1069, 481.8pt x 481.8pt>
+File: Interpolated_PM2008_0154.png Graphic file (type png)
+
+<use Interpolated_PM2008_0154.png>
+Package pdftex.def Info: Interpolated_PM2008_0154.png used on input line 722.
+(pdftex.def)             Requested size: 214.64064pt x 214.63925pt.
+
+<Standard_Error_PM2008_0154.png, id=1070, 481.8pt x 481.8pt>
+File: Standard_Error_PM2008_0154.png Graphic file (type png)
+
+<use Standard_Error_PM2008_0154.png>
+Package pdftex.def Info: Standard_Error_PM2008_0154.png used on input line 723.
+
+(pdftex.def)             Requested size: 214.64064pt x 214.63925pt.
+ [22 <./Interpolated_AOD2009_06.png> <./StandardError_AOD2009_06.png> <./Interp
+olated_PM2008_0154.png> <./Standard_Error_PM2008_0154.png>] <Interpolated_PM200
+8_0179.png, id=1078, 481.8pt x 481.8pt>
+File: Interpolated_PM2008_0179.png Graphic file (type png)
+
+<use Interpolated_PM2008_0179.png>
+Package pdftex.def Info: Interpolated_PM2008_0179.png used on input line 755.
+(pdftex.def)             Requested size: 214.64064pt x 214.63925pt.
+
+<Standard_Error_PM2008_0179.png, id=1079, 481.8pt x 481.8pt>
+File: Standard_Error_PM2008_0179.png Graphic file (type png)
+
+<use Standard_Error_PM2008_0179.png>
+Package pdftex.def Info: Standard_Error_PM2008_0179.png used on input line 756.
+
+(pdftex.def)             Requested size: 214.64064pt x 214.63925pt.
+
+<Interpolated_PM2008_0180.png, id=1080, 481.8pt x 481.8pt>
+File: Interpolated_PM2008_0180.png Graphic file (type png)
+
+<use Interpolated_PM2008_0180.png>
+Package pdftex.def Info: Interpolated_PM2008_0180.png used on input line 767.
+(pdftex.def)             Requested size: 214.64064pt x 214.63925pt.
+
+<Standard_Error_PM2008_0180.png, id=1081, 481.8pt x 481.8pt>
+File: Standard_Error_PM2008_0180.png Graphic file (type png)
+
+<use Standard_Error_PM2008_0180.png>
+Package pdftex.def Info: Standard_Error_PM2008_0180.png used on input line 768.
+
+(pdftex.def)             Requested size: 214.64064pt x 214.63925pt.
+ [23 <./Interpolated_PM2008_0179.png> <./Standard_Error_PM2008_0179.png>]
+<Interpolated_PM2008_0181.png, id=1087, 481.8pt x 481.8pt>
+File: Interpolated_PM2008_0181.png Graphic file (type png)
+
+<use Interpolated_PM2008_0181.png>
+Package pdftex.def Info: Interpolated_PM2008_0181.png used on input line 779.
+(pdftex.def)             Requested size: 214.64064pt x 214.63925pt.
+
+<Standard_Error_PM2008_0181.png, id=1088, 481.8pt x 481.8pt>
+File: Standard_Error_PM2008_0181.png Graphic file (type png)
+
+<use Standard_Error_PM2008_0181.png>
+Package pdftex.def Info: Standard_Error_PM2008_0181.png used on input line 781.
+
+(pdftex.def)             Requested size: 214.64064pt x 214.63925pt.
+
+<Interpolated_PM2008_0182.png, id=1089, 481.8pt x 481.8pt>
+File: Interpolated_PM2008_0182.png Graphic file (type png)
+
+<use Interpolated_PM2008_0182.png>
+Package pdftex.def Info: Interpolated_PM2008_0182.png used on input line 791.
+(pdftex.def)             Requested size: 214.64064pt x 214.63925pt.
+
+<Standard_Error_PM2008_0182.png, id=1090, 481.8pt x 481.8pt>
+File: Standard_Error_PM2008_0182.png Graphic file (type png)
+
+<use Standard_Error_PM2008_0182.png>
+Package pdftex.def Info: Standard_Error_PM2008_0182.png used on input line 793.
+
+(pdftex.def)             Requested size: 214.64064pt x 214.63925pt.
+ [24 <./Interpolated_PM2008_0180.png> <./Standard_Error_PM2008_0180.png> <./Int
+erpolated_PM2008_0181.png> <./Standard_Error_PM2008_0181.png>] [25 <./Interpola
+ted_PM2008_0182.png> <./Standard_Error_PM2008_0182.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 877--878
+[]\OT1/cmr/m/it/10 Lambert Con-for-mal Conic\OT1/cmr/m/n/10 . Geo-Ref-er-ence, 
+n.d. Web. 26 July 2016.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 879--880
+[]\OT1/cmr/m/it/10 Earth Ob-serv-ing Lab-o-ra-tory. \OT1/cmr/m/n/10 NCAR UCAR, 
+n.d. Web. 26 July 2016.
+ []
+
+[26]
+Underfull \hbox (badness 10000) in paragraph at lines 882--883
+[]\OT1/cmr/m/it/10 Top 20 Largest Cal-i-for-nia Wild-fires. \OT1/cmr/m/n/10 Cal
+ Fire, n.d. Web. 26 July 2016.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 884--885
+[]\OT1/cmr/m/n/10 Kenward, Alyson, Den-nis Adams-Smith, and Urooj Raja. "WILD-F
+IRES
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 884--885
+\OT1/cmr/m/n/10 and AIR POL-LU-TION." Cli-mate Cen-tral, 2013. Web. 26 July 201
+6.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 886--887
+[]\OT1/cmr/m/n/10 "Most Pol-luted Cities." \OT1/cmr/m/it/10 Sate of the Air\OT1
+/cmr/m/n/10 . Amer-i-can Lung As-so-ci-a-tion, 2013.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 886--887
+\OT1/cmr/m/n/10 Web. 26 July 2016. \OT1/cmr/m/it/10 http://www.stateoftheair.or
+g/2013/city-rankings/most-polluted-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 894--895
+[]\OT1/cmr/m/n/10 "Autoregressive in-te-grated mov-ing av-er-age." Wikipedia. N
+.p., n.d. Web. 26 July 2016.
+ []
+
+[27] (./epafinalpaper1.aux) ) 
+Here is how much of TeX's memory you used:
+ 4558 strings out of 493089
+ 69135 string characters out of 6134842
+ 132618 words of memory out of 5000000
+ 7928 multiletter control sequences out of 15000+600000
+ 16629 words of font info for 62 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 42i,10n,40p,2072b,299s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/pu
+blic/amsfonts/cmextra/cmbsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public
+/amsfonts/cmextra/cmmib7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmtt10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/sy
+mbols/msbm10.pfb>
+Output written on epafinalpaper1.pdf (27 pages, 2517257 bytes).
+PDF statistics:
+ 1168 PDF objects out of 1200 (max. 8388607)
+ 829 compressed objects within 9 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+
